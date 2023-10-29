@@ -1,1 +1,23 @@
-
+h1 {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.hovedbilde{
+    height: 60%;
+    width: 60%;
+    
+}
+.main-container{
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+section{
+    margin-bottom: 20px;
+}
+.horisontal-linje{
+    color: black;
+    height: 100px;
+}
