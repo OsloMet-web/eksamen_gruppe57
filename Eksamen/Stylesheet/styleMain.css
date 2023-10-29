@@ -74,3 +74,25 @@ footer {
     padding-bottom: 20px;
     padding-top:30px;
   }
+  footer p {
+    color:aliceblue ;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  footer img{
+    
+  }
+  .tlf{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .mail{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .tlf:hover{
+    color: #000000;
+  }
+  .mail:hover{
+    color: #000000;
+  }
