@@ -65,3 +65,12 @@ h1 {
     text-align: center;
     
 }
+footer {
+    background-image: linear-gradient(#5c2c28, #331613);
+    color:#5c2c28;
+    height:150px;
+    padding:30px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top:30px;
+  }
