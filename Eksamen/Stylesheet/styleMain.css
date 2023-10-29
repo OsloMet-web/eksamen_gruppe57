@@ -11,7 +11,7 @@ nav {
     align-items: center;
 }
 nav a {
-    font-family: lato, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
     margin: auto;
     font-size: large;
@@ -66,21 +66,22 @@ h1 {
     
 }
 footer {
-    background-image: linear-gradient(#5c2c28, #331613);
+    background-image: linear-gradient(#a6413a, #331613);
     color:#5c2c28;
-    height:150px;
-    padding:30px;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top:30px;
+    height:180px;
+    padding-bottom: 30px;
+    padding-top: 10px;
   }
   footer p {
     color:aliceblue ;
-    font-family: 'Times New Roman', Times, serif;
-    
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
   }
   footer img{
-    
+    height: 33px;
+    width: 280px;
+    float: left;
+    margin-left: 20px;
   }
   .tlf{
     text-decoration: none;
