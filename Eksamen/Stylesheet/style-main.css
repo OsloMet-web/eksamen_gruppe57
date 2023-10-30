@@ -13,10 +13,10 @@ nav {
 .nav-menu {
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
-  margin: auto;
   font-size: large;
   color: black;
   font-weight: bold;
+  margin: auto;
 }
 .nav-menu:hover{
   color: white;
@@ -140,5 +140,29 @@ iframe{
 }
 .books-img{
   width: 100%;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
+}
+.main-container-library{
+  position: relative;
+}
+.text-overlay{
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  font-size: 400%;
+  color: aliceblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 5px solid aliceblue;
+  border-radius: 6px;
+  padding: 10px;
+  width: 26%;
+}
+.container-content{
+  position: absolute;
+  top: 25%;
+  left: 9%;
+  color: aliceblue;
+  width: 26%;
+  font-size: x-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
