@@ -10,7 +10,7 @@ nav {
   display: flex;
   align-items: center;
 }
-.nav-meny {
+.nav-menu {
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
   margin: auto;
@@ -18,7 +18,7 @@ nav {
   color: black;
   font-weight: bold;
 }
-.nav-meny:hover{
+.nav-menu:hover{
   color: white;
 }
 nav img{
@@ -30,7 +30,7 @@ h1 {
   margin-top: 100px;
   margin-bottom: 150px;
 }
-#overskrift {
+#header {
   font-family: 'Lucida Sans', sans-serif;
   font-size: 40px;
   text-align: left;
@@ -100,7 +100,7 @@ footer img{
 .mail:hover{
   color: #000000;
 }
-.hovedbilde{
+.main-img{
   height: 60%;
   width: 60%; 
 }
@@ -109,13 +109,13 @@ footer img{
   align-items: center;
   margin-top: 30px;
 }
-.horisontal-linje{
+.horizontal-line{
   border-bottom: 1px solid black;
   margin-top: -6%;
   width: 60%;
   margin-left: 20%;
 }
-.innhold-tekst{
+.contents{
   text-align: left;
   width: 40%;
   margin-left: 30%;
@@ -130,14 +130,15 @@ iframe{
   border-radius: 3px;
   margin-bottom: 10px;
 }
-.hoved-footer-tekst{
+.main-footer-text{
   margin-top: 40px;
   font-size: 14px;
 }
-.footer-tekst{
+.footer-text{
   margin-top: -5px;
   font-size: 14px;
 }
 .books-img{
   width: 100%;
+  filter: brightness(0.5);
 }
