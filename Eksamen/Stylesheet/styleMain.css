@@ -22,7 +22,9 @@ nav a :hover{
     color: #A73E38;
 }
 
-
+nav img{
+  height: 100px;
+}
 h1 {
     font-family: 'Lucida Sans', sans-serif;
     font-size: 40px;
@@ -140,4 +142,10 @@ iframe{
     border: 2px solid black;
     border-radius: 3px;
     margin-bottom: 10px;
+}
+.hoved-footer-tekst{
+  margin-top: 40px;
+}
+.footer-tekst{
+  margin-top: -5px;
 }
