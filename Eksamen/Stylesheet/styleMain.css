@@ -30,6 +30,15 @@ h1 {
     margin-bottom: 150px;
 }
 
+#overskrift {
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 40px;
+  text-align: left;
+  margin-left: 30%;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+
 
 .article {
     margin-left: 60rem;
@@ -98,3 +107,37 @@ footer {
   .mail:hover{
     color: #000000;
   }
+  .hovedbilde{
+    height: 60%;
+    width: 60%;
+    
+}
+.main-container{
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+section{
+    margin-bottom: 20px;
+}
+.horisontal-linje{
+    border-bottom: 1px solid black;
+    margin-top: -6%;
+    width: 60%;
+    margin-left: 20%;
+}
+.innhold-tekst{
+    text-align: left;
+    width: 40%;
+    margin-left: 30%;
+    font-size:large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+iframe{
+    width: 40%;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
