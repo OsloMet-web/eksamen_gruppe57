@@ -124,7 +124,7 @@ section{
   margin-left: 30%;
   font-size:large;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 iframe{
   width: 40%;
@@ -135,7 +135,9 @@ iframe{
 }
 .hoved-footer-tekst{
   margin-top: 40px;
+  font-size: 14px;
 }
 .footer-tekst{
   margin-top: -5px;
+  font-size: 14px;
 }
