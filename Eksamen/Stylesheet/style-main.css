@@ -16,13 +16,41 @@ nav {
   font-size: large;
   color: black;
   font-weight: bold;
-  margin: auto;
+  margin-left: 6%;
 }
 .nav-menu:hover{
   color: white;
 }
 nav img{
   height: 100px;
+}
+.toggle-menu{
+  display: none; /*Skjuler dropdown nav-baren*/
+  flex-direction: column; /*Putter elementene vertikalt i flexboxen*/
+  cursor: pointer; /*Endrer hvordan musepeker ser ut for å vise at den er klikkbar */
+  background-color: #000000;
+  width: 40px;
+  height: 37px;
+  margin-left: auto; /*Putter dropdown knappen til høyre*/
+  margin-right: 7%;
+}
+.burger-bar{
+  width: 80%;
+  height: 4px;
+  background-color: aliceblue;
+  margin: 10%;
+  border-radius: 2px;
+}
+@media (max-width: 820px){ /*CSSen inni her gjelder bare når skjermen er max 1024px bred*/
+  .toggle-menu{
+    display: flex; /*Gjør flexboksen synlig */
+  }
+  .nav-menu{
+    display: none; /*Skjuler hovedmenyen*/
+  }
+  .toggle-menu:hover{
+    background-color: gray;
+  }
 }
 h1 {
   font-family: 'Lucida Sans', sans-serif;
@@ -32,11 +60,11 @@ h1 {
 }
 #header {
   font-family: 'Lucida Sans', sans-serif;
-  font-size: 40px;
+  font-size: 300%;
   text-align: left;
   margin-left: 30%;
   margin-top: 20px;
-  margin-bottom: 150px;
+  margin-bottom: 7%;
 }
 .article {
   margin-left: 60rem;
@@ -69,9 +97,9 @@ h1 {
 footer {
   background-image: linear-gradient(#a6413a, #331613);
   color:#5c2c28;
-  height: 150px;
   padding-bottom: 30px;
   padding-top: 10px;
+  height: 150px;
 }
 footer p {
   color:aliceblue ;
@@ -85,6 +113,7 @@ footer img{
   float: left;
   margin-left: 30px;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 .tlf{
   text-decoration: none;
@@ -131,7 +160,7 @@ iframe{
   margin-bottom: 10px;
 }
 .main-footer-text{
-  margin-top: 40px;
+  margin-top: 45px;
   font-size: 14px;
 }
 .footer-text{
