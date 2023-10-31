@@ -10,6 +10,10 @@ nav {
   display: flex;
   align-items: center;
 }
+.nav-main-container{
+  display: flex;
+  align-items: center;
+}
 .nav-menu {
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
@@ -24,33 +28,67 @@ nav {
 nav img{
   height: 100px;
 }
-.toggle-menu{
-  display: none; /*Skjuler dropdown nav-baren*/
-  flex-direction: column; /*Putter elementene vertikalt i flexboxen*/
-  cursor: pointer; /*Endrer hvordan musepeker ser ut for å vise at den er klikkbar */
-  background-color: #000000;
-  width: 40px;
-  height: 37px;
-  margin-left: auto; /*Putter dropdown knappen til høyre*/
-  margin-right: 7%;
+ul {
+  list-style: none; /*Fjerner dottene i lista*/
+  padding: 0;
+  margin: 0;
 }
-.burger-bar{
-  width: 80%;
-  height: 4px;
-  background-color: aliceblue;
-  margin: 10%;
-  border-radius: 2px;
+.nav-main-container li {
+  margin-left: 10%;
 }
-@media (max-width: 820px){ /*CSSen inni her gjelder bare når skjermen er max 1024px bred*/
+#toggle-menu-checkbox {
+  display: none;
+}
+@media (max-width: 820px) {
   .toggle-menu{
-    display: flex; /*Gjør flexboksen synlig */
+    display: flex; 
+    flex-direction: column; /*Putter elementene vertikalt i flexboxen*/
+    cursor: pointer; /*Endrer hvordan musepeker ser ut for å vise at den er klikkbar */
+    background-color: #000000;
+    width: 40px;
+    height: 25px;
+    margin-left: auto; /*Putter dropdown knappen til høyre*/
+    margin-right: 7%;
+    border-radius: 4px;
+  }
+  .top-line{
+    width: 80%;
+    height: 4px;
+    background-color: rgb(245, 237, 227);
+    margin: 10%;
+    border-radius: 2px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  .bottom-line{
+    width: 80%;
+    height: 4px;
+    background-color: rgb(245, 237, 227);
+    margin: 10%;
+    border-radius: 2px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  #toggle-menu-checkbox {
+    display: none;
+  }
+  .toggle-menu:hover {
+      background-color: gray;
   }
   .nav-menu{
-    display: none; /*Skjuler hovedmenyen*/
+    display: none;
   }
-  .toggle-menu:hover{
-    background-color: gray;
+  input:checked + .toggle-menu .top-line { /*Kilde for denne boksen https://www.youtube.com/watch?v=qdYNYsV9_08&ab_channel=KevinPowell */
+    transform: rotate(45deg) translate(4.5px, 4px);
+    width: 20px;
+    margin-left: 10px;
   }
+  input:checked + .toggle-menu .bottom-line {
+    transform: rotate(-45deg) translate(4.5px, -4px);
+    width: 20px;
+    margin-left: 10px;
+  }
+  input:checked
 }
 h1 {
   font-family: 'Lucida Sans', sans-serif;
