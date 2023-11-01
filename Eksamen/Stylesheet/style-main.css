@@ -271,3 +271,12 @@ iframe{
   margin: 1% 5%; 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.study-place-img{
+  width: auto;
+  max-width: 50%;
+  margin: 0 5% 5% 0;
+}
+.library-bottom-content{
+  display: flex;
+  align-items: flex-start;
+}
