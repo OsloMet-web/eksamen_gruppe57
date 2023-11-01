@@ -118,7 +118,9 @@ ul {
   input:checked + .toggle-menu .burger-bar{
     display: none;
   }
-  
+  .text-overlay{
+    display: none;
+  }
 }
 h1 {
   font-family: 'Lucida Sans', sans-serif;
@@ -235,31 +237,37 @@ iframe{
   margin-top: -5px;
   font-size: 14px;
 }
-.books-img{
-  width: 100%;
-  filter: brightness(0.4);
-}
-.main-container-library{
+.main-container-library {
   position: relative;
 }
-.text-overlay{
-  position: absolute;
-  top: 10%;
-  left: 8%;
-  font-size: 400%;
-  color: aliceblue;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border: 5px solid aliceblue;
-  border-radius: 6px;
-  padding: 10px;
-  width: 26%;
+.books-img {
+  width: 100%;
+  height: auto;
 }
-.container-content{
+.text-overlay {
   position: absolute;
-  top: 25%;
-  left: 9%;
-  color: aliceblue;
-  width: 26%;
-  font-size: x-large;
+  top: 10%; 
+  left: 10%; 
+  font-size: 5vw; 
+  background-color: rgba(1, 1, 1, 0.78); /*https://rainbow.rodneylab.com/ */
+  color: rgb(245, 237, 227);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+}
+.container-content {
+  position: relative; 
+  color: black;
+  max-width: 100%; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+  margin: 0 5%; 
+}
+.library-header{
+  margin: 1% 5%; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.library-subheader{
+  margin: 1% 5%; 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
