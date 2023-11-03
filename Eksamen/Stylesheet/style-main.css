@@ -9,6 +9,7 @@ nav {
   margin: 0;
   display: flex;
   align-items: center;
+  height: 100px;
 }
 .nav-main-container{
   display: flex;
@@ -119,6 +120,9 @@ ul {
     display: none;
   }
   .text-overlay{
+    display: none;
+  }
+  .logo-img{
     display: none;
   }
 }
