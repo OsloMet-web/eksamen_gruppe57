@@ -147,34 +147,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: 7%;
 }
-.article {
-  margin-left: 60rem;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 100px;
-}
-/*@media screen and (min-width:839px) eateries
-   margin-bottom: 32px; 
-   */
-.grid-container-eateries{
-  display:inline-grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 200px 200px;
-  column-gap: 300px;
-  row-gap: 300px;
-  align-items: center;
-  justify-items: center;
-}
-.footer {
-  position: center;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  color: #000000;
-  background-color: #7c6565;
-  display: center;
-  text-align: center;
-}
+
 /*Lager en footer på bunnen av skjermen der fargen blir gradvis mørkere jo lengre ned på footeren.*/
 footer {
   background-image: linear-gradient(#a6413a, #331613);
@@ -293,3 +266,124 @@ iframe{
   display: flex;
   align-items: flex-start;
 }
+
+/* Canteen page */
+h1 {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: auto;
+  line-height: 1.5;
+}
+ 
+h2 {
+  text-align: center;
+  font-weight: lighter;
+  line-height: 1.5;
+  padding: 50px;
+  
+  color: #281b18;
+  
+  
+}
+
+/* Responsivity */
+@media only screen and (max-width: 600px) {
+  .place{
+      position: unset;
+      float: unset;
+ }
+}
+/* positioning of name so that it is in line with the picture */
+* {
+  box-sizing: border-box;
+}
+.wrapper-eateries {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.eateries {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 500px));
+  grid-gap: 1,5rem;
+}
+.eatery-info {
+  position: relative;
+}
+/* space between image and info about eatery */
+.eateries > .eateries-info > img {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/* adjust place and make it bold */
+.place {
+  grid-area: place;
+  padding-left: 3px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* the name of the eatery, font-settings and padding */
+.eatery-place {
+ grid-area: eatery;
+ font-size:x-large;
+ font-weight: bolder;
+ padding-left: 10px;
+}
+/* description/info about the eateries w/container (so that description comes under and under each other) */
+
+.description {
+  grid-area: description;
+  margin: 1;
+  padding-left: 10px;
+  margin-right: 40px;
+  position: relative;
+}
+.col-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+/* spacing between text and icons */
+
+.eatery-picture {
+ max-width: 600px;
+ max-height: 300px;
+ border: 3px solid rgb(39, 30, 30);
+ box-shadow: 3px 4px #423636;
+}
+
+.vegetarian-icon {
+  margin-top: 5px;
+  margin-bottom: 35px;
+  padding-top: 5px;
+  height: 60px;
+}
+.gluten-icon {
+  margin-top: 5px;
+  margin-bottom: 35px;
+  padding-top: 5px;
+  height: 60px;
+ }
+ .coffee-icon {
+  margin-top: 5px;
+  margin-bottom: 35px;
+  padding-top: 0;
+  height: 60px;
+ }
+
+ .location-icon {
+  height: 22px;
+  left: 10px;
+  top: 0;
+  float: left;
+  padding-left: 1px;
+ }
+
+ 
