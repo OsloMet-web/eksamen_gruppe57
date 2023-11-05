@@ -47,13 +47,13 @@ ul {
 .nav-dropdown {
   display: none;
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: 7%;
   right: 0; 
   left: auto; 
   background-color: #cb4f47;
   z-index: 1; /*Passer på at dropdownen legger seg oppå de andre elementene.*/
   border-radius: 0 0 10px 10px;
-  padding: 30px;
+  padding: 40px;
   position: fixed;
   width: 100%;
   top: 0;
