@@ -251,10 +251,14 @@ iframe{
 }
 .library-header{
   margin: 1% 5%; 
+  padding: 0;
+  text-align: left;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .library-subheader{
   margin: 1% 5%; 
+  padding: 0;
+  text-align: left;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .study-place-img{
