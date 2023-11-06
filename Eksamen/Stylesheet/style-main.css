@@ -154,7 +154,7 @@ footer {
   color:#5c2c28;
   padding-bottom: 30px;
   padding-top: 10px;
-  height: 150px;
+  height: 180px;
 }
 /*Stilen til elementene i footern*/
 footer p {
@@ -208,6 +208,16 @@ footer img{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-bottom: 25px;
 }
+@media (max-width: 1080px){
+  .contents{
+    width: 80%;
+    margin-left: 10%;
+  }
+  #header{
+    margin-left: 10%;
+  }
+}
+
 iframe{
   width: 40%;
   height: 100px;
@@ -258,6 +268,7 @@ iframe{
 .library-subheader{
   margin: 1% 5%; 
   padding: 0;
+  font-weight: bold;
   text-align: left;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -389,5 +400,6 @@ h2 {
   float: left;
   padding-left: 1px;
  }
+
 
  
