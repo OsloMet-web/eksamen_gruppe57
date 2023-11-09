@@ -400,6 +400,51 @@ h2 {
   float: left;
   padding-left: 1px;
  }
-
-
- 
+ /* Topical page */
+.wrapper-topical {
+  display: grid;
+  grid-template-columns: 70vw auto minmax(300px, 20vw) 20px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.topical-main-box {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.topical-secondary-box {
+  grid-column: 1 / 2;
+  grid-row: 2;
+  background-image: url("../Images/Technology\ and\ buisness.jpg");
+  background-size: cover;
+  width: minmax(auto, 40vw);
+  height: 40vw;
+  max-height: 530px;
+}
+.topical-tertiary-box {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+  background-image: url("../Images/beige2.jpg");
+}
+.topical-header {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.topical-content {
+  font-size: 17px;
+  margin-left: 0.5em;
+  list-style-type: disc;
+}
+.topical-content-tertiary {
+  font-size: 17px;
+  margin-left: 1.5em;
+  margin-right: 0.5em;
+  list-style-type: disc;
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.topical-li:not(:last-child) {
+  margin-bottom: 5px;
+} 
