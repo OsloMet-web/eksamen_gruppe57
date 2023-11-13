@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Home</title>
-        <!--Lager et favicon-->
+        <!--Making a favicon-->
+        <!--Picture is taken from https://www.shutterstock.com/image-vector/residence-home-property-1153493848?irgwc=1&pl=77643-108110&utm_campaign=TinEye&utm_content=108110&utm_medium=Affiliate&utm_source=77643&utm_term, taken by ShutterStock.-->
         <link rel="icon" type="image/png" href="../Images/home.png">
         <link rel="stylesheet" type="text/css" href="../Stylesheet/style-main.css">
     </head>
@@ -11,13 +12,13 @@
         <header>
             <nav>
                 <a href="index.html"><img class="logo-img" src="../Images/oslomet.png" alt="OsloMet logo"></a>
-                <!--Checkboxen og label som lager et "klikkbart" område-->
+                <!--Checkbox and label creates a clickable area-->
                 <input type="checkbox" id="toggle-menu-checkbox">
                 <label for="toggle-menu-checkbox" class="toggle-menu">
                     <div class="burger-bar"></div>
                     <div class="burger-bar"></div>
                     <div class="burger-bar"></div>
-                    <!--Hoved nav-menyen-->
+                    <!--Main nav-menu-->
                     <ul class="nav-main-container">
                         <li><a class="nav-menu" href="index.html">Campus</a></li>
                         <li><a class="nav-menu" href="topical.html">Topical</a></li>
@@ -25,7 +26,7 @@
                         <li><a class="nav-menu" href="canteen.html">Eateries</a></li>
                         <li><a class="nav-menu" href="accessibility.html">Accessibility</a></li>
                     </ul>
-                    <!--Dropdown menyen - skjules før checkboxen blir "checked", checkboxen dukker opp når skjermen er tynnere enn 820px-->
+                    <!--Dropdown menu - hidden by default, the checkbox/burger-menu appears when the screen is less than 1080px in width-->
                     <ul class="nav-dropdown">
                         <li><a class="nav-menu" href="index.html">Campus</a></li>
                         <li><a class="nav-menu" href="topical.html">Topical</a></li>
@@ -39,34 +40,34 @@
             </nav>            
         </header>
             <div class="main-container-campus">
-                <img class="main-img" src="../Images/pilestredet.jpg" alt="Hovedinngang hos OsloMets Pilestred campus">
+                <img class="main-img" src="../Images/pilestredet.jpg" alt="Main entrance at OsloMet Campus">
                 <h1 id="header">Pilestredet Campus</h1>
-                <!--Lager en div for å senere kunnne style den i css slik at det blir en tynn horisontal linje.-->
+                <!--Making a div that is styled into a horizontal line-->
                 <div class="horizontal-line"></div>
-                <p class="contents">OsloMet - Storbyuniversitetet er et anerkjent universitet lokalisert i hjertet av Norges pulserende hovedstad, Oslo.
-                 Med en sterk forpliktelse til forskning, undervisning og samfunnstjeneste har OsloMet utviklet seg til å bli en av Norges ledende institusjoner for høyere utdanning. 
-                 Universitetets visjon er å "møte fremtidens utfordringer" gjennom innovasjon, inkludering og kunnskapsspredning.
+                <p class="contents">OsloMet - Storbyuniversitetet is a recognized university located in the heart of Norway's vibrant capital, Oslo.
+                With a strong commitment to research, teaching and community service, OsloMet has developed into one of Norway's leading institutions for higher education.
+                The university's vision is to "meet the challenges of the future" through innovation, inclusion and knowledge dissemination.   
                 </p>
-                <p class="contents">OsloMets største Campus ligger i sentrum av Oslo i Pilestredet. 
-                Campuset har sin egen unike karakter og spesialisering, og tilbyr et bredt spekter av fagområder og studieprogrammer. Du kan finne Pilestred Campus her:</p>
-                <!--Legger inn et kart fra google maps, når den trykkes tar den deg til google maps sine sider for den lokasjonen.-->
+                <p class="contents">OsloMet's largest Campus is located in the center of Oslo in Pilestredet.
+                The campus has its own unique character and specialisation, and offers a wide range of subject areas and study programmes. You can find Pilestred Campus here:</p>
+                <!--Adding an iframe map from Google Maps, when clicked will send the user to the Google Maps url for that specific location-->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1181.872592876385!2d10.733546733445815!3d59.92094629846428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7913e2a529%3A0xd56463578e04ce80!2sOsloMet!5e1!3m2!1sno!2sno!4v1698587479521!5m2!1sno!2sno"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p class="contents">På OsloMet Pilestredet finner du et mangfoldig og internasjonalt miljø, med studenter og ansatte fra hele verden. Universitetet legger stor vekt på praksisnær 
-                undervisning og samarbeid med næringsliv og samfunn, noe som gir studentene praktiske ferdigheter og erfaringer som er relevante for arbeidslivet.
-                Med moderne undervisningsfasiliteter, biblioteker, laboratorier og studenttjenester som støtter studentenes akademiske og personlige utvikling, 
-                har OsloMet et sterkt engasjement for å gi studentene en meningsfull utdanningserfaring.</p> 
-                <p class="contents">OsloMet er også kjent for sin forskning på områder som helse, teknologi, pedagogikk, samfunnsvitenskap og mer. 
-                Universitetet spiller en viktig rolle i å drive innovasjon og kunnskapsutvikling i Norge.
-                Enten du er interessert i å forfølge en bachelorgrad, mastergrad eller doktorgrad, eller bare ønsker å utforske spennende forskningsmuligheter, har OsloMet mye å tilby. 
-                Pilestredet Campus gir et pulserende læringsmiljø,og universitetets engasjement for fremragende undervisning og forskning gjør det til et ideelt sted å forfølge dine utdannelsesmål.</p>
+                <p class="contents">At OsloMet Pilestredet you will find a diverse and international environment, with students and staff from all over the world. The university places great emphasis on practice
+                teaching and collaboration with business and society, which gives students practical skills and experiences that are relevant to working life.
+                With modern teaching facilities, libraries, laboratories and student services that support students' academic and personal development,
+                OsloMet has a strong commitment to giving students a meaningful educational experience.</p> 
+                <p class="contents">OsloMet is also known for its research in areas such as health, technology, pedagogy, social sciences and more.
+                The university plays an important role in driving innovation and knowledge development in Norway.
+                Whether you are interested in pursuing a bachelor's degree, master's degree or doctorate, or simply want to explore exciting research opportunities, OsloMet has a lot to offer.
+                Pilestredet Campus provides a vibrant learning environment, and the university's commitment to excellent teaching and research makes it an ideal place to pursue your educational goals..</p>
             </div>
     </body>
     <footer>
         <img src="../Images/oslometFooterLogo.png" alt="OsloMet Storbyuniversitetet logo">
-        <!--href="tel: +47 401 61 007" og href="mailto:oslomet@oslomet.no" gjør at når du klikker på nummeret/mailen kommer du direkte til der du ringer/mailer.-->
-        <p class="main-footer-text">Kontakt oss på telefon: <a class="tlf" href="tel: +47 401 61 007">+47 670 00 500</a> eller mail: <a class="mail" href="mailto:oslomet@oslomet.no">oslomet@oslomet.no</a></p>
-        <p class="footer-text">Åpningstider for studenter:</p>
-        <p class="footer-text">Mandag–fredag 06:00–22:00</p> 
-        <p class="footer-text">Lørdag–søndag 08:00–22:00</p>
+        <!--href="tel: +47 401 61 007" and href="mailto:oslomet@oslomet.no" sends the user directly to a call or to where they can send an email.-->
+        <p class="main-footer-text">Contact us by phone: <a class="tlf" href="tel: +47 401 61 007">+47 670 00 500</a> or mail: <a class="mail" href="mailto:oslomet@oslomet.no">oslomet@oslomet.no</a></p>
+        <p class="footer-text">Opening hours for students:</p>
+        <p class="footer-text">Monday–friday 06:00–22:00</p> 
+        <p class="footer-text">Saturday–sunday 08:00–22:00</p>
     </footer>
 </html>

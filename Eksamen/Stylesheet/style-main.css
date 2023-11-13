@@ -10,7 +10,7 @@ nav {
   margin: 0;
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 120px;
 }
 .nav-main-container{
   display: flex;
@@ -150,12 +150,13 @@ h1 {
 
 /*Lager en footer på bunnen av skjermen der fargen blir gradvis mørkere jo lengre ned på footeren.*/
 footer {
-  background-image: linear-gradient(#a6413a, #331613);
-  color:#5c2c28;
+  background-image: linear-gradient(#cb4f47, #200c0cfa);
+  color:#cb4f47;
   padding-bottom: 30px;
   padding-top: 10px;
-  height: 180px;
+  height: 200px;
 }
+
 /*Stilen til elementene i footern*/
 footer p {
   color:aliceblue ;
@@ -207,6 +208,7 @@ footer img{
   font-size:large;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-bottom: 25px;
+
 }
 @media (max-width: 1080px){
   .contents{
@@ -282,7 +284,7 @@ iframe{
   align-items: flex-start;
 }
 
-/* Canteen page */
+/* Eateries page */
 h1 {
   padding: 20px;
   text-align: center;
@@ -295,10 +297,7 @@ h2 {
   font-weight: lighter;
   line-height: 1.5;
   padding: 50px;
-  
   color: #281b18;
-  
-  
 }
 
 /* Responsivity */
@@ -413,11 +412,10 @@ h2 {
 .topical-secondary-box {
   grid-column: 1 / 2;
   grid-row: 2;
-  background-image: url("../Images/Technology\ and\ buisness.jpg");
+  background-image: url("../Images/Olaf_spiseri.jpg");
   background-size: cover;
-  width: minmax(auto, 40vw);
+  width: minmax(auto, 70vw);
   height: 40vw;
-  max-height: 530px;
 }
 .topical-tertiary-box {
   grid-column: 3 / span 2;
@@ -448,3 +446,17 @@ a, a:hover, a:focus, a:active {
 .topical-li:not(:last-child) {
   margin-bottom: 5px;
 } 
+@media only screen and (max-width: 800px) {
+  .topical-main-box{
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+  .topical-tertiary-box{
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+  .topical-tertiary-box{
+    grid-column: 1 / 4;
+    grid-row: 3;
+  }
+}
