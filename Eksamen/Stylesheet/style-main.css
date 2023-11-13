@@ -1,9 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 body{
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', serif;
+  line-height: 30px;
   background-color: rgb(245, 237, 227);
 }
-/*Lager en nav meny på toppen av skjermen.*/
+/*Creating a nav-menu on top of the webpage*/
 nav {
   background-color: #cb4f47;
   padding: 0;
@@ -16,7 +19,7 @@ nav {
   display: flex;
   align-items: center;
 }
-/*Styling av elementene i nav menyen*/
+/*Styling of elements in the nav-menu*/
 .nav-menu {
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
@@ -25,7 +28,7 @@ nav {
   font-weight: bold;
   margin-left: 38px;
 }
-/*Når musen er over elementene i nav skifter de farge for at bruker skal klart se hva de trykker på.*/
+/*Making it clear for the user that their mouse is hovering over the element*/
 .nav-menu:hover{
   color: white;
 }
@@ -40,10 +43,11 @@ ul {
 .nav-main-container li {
   margin-left: 10%;
 }
+/*Hiding the checkbox*/
 #toggle-menu-checkbox {
   display: none;
 }
-/*Dropdown fra "hamburger" knapp når siden blir mindre - skjult foreløpig*/
+/*Dropdown that appears when the "burger-bar" checkbox is checked - hidden by default*/
 .nav-dropdown {
   display: none;
   flex-direction: column;
@@ -51,7 +55,7 @@ ul {
   right: 0; 
   left: auto; 
   background-color: #cb4f47;
-  z-index: 1; /*Passer på at dropdownen legger seg oppå de andre elementene.*/
+  z-index: 1; /*Making sure the dropdown appears over all other elements on the page.*/
   border-radius: 0 0 10px 10px;
   padding: 40px;
   position: fixed;
@@ -60,20 +64,20 @@ ul {
   justify-content: center;
   align-items: center;
 }
-/*Skjuler elementer i nav-baren når skjermen blir mindre enn 820px bred, da dukker også "hamburger" knappen opp, som skaper dropdownen som er mer egnet for tynnere skjermer.*/
+/*Hiding the nav-menu when the screen has a width of 1080px or less, the "hamburger" button will show up, when clicked the dropdown appears.*/
 @media (max-width: 1080px) {
   .toggle-menu{
     display: flex; 
     flex-direction: column; 
-    cursor: pointer; /*Endrer hvordan musepeker ser ut for å vise at den er klikkbar */
+    cursor: pointer; /*Changes what the mouse looks like to clearly show the user it's clickable. */
     background-color: #000000;
     width: 40px;
     height: 36px;
-    margin-left: auto; /*Putter dropdown knappen til høyre*/
+    margin-left: auto; 
     margin-right: 7%;
     border-radius: 4px;
   }
-  /*De hvite stripene som gir knappen "burger" looken.*/
+  /*Styling the burger-bars*/
   .burger-bar{
     width: 80%;
     height: 4px;
@@ -81,7 +85,7 @@ ul {
     margin: 10%;
     border-radius: 2px;
   }
-  /*Lagde egen X for å kunne bruke checkboxen som eneste knapp på skjermen.*/
+  /*Made my own clickable "X" that changes size depending on screen width, so that I avoid adding a button.*/
   .x-line1{
     width: 8%;
     height: 5px;
@@ -110,7 +114,7 @@ ul {
   .nav-main-container{
     display: none;
   }
-  /*Kilde for inspirasjon til denne boksen https://www.youtube.com/watch?v=qdYNYsV9_08&ab_channel=KevinPowell*/
+  /*Source for inspiration for the checkbox, so that I can avoid the use of JS: https://www.youtube.com/watch?v=qdYNYsV9_08&ab_channel=KevinPowell*/
   input:checked + .toggle-menu .x-line1 { 
     display: flex;
   }
@@ -148,7 +152,7 @@ h1 {
   margin-bottom: 7%;
 }
 
-/*Lager en footer på bunnen av skjermen der fargen blir gradvis mørkere jo lengre ned på footeren.*/
+/*Creating a footer with a gradual colour shift*/
 footer {
   background-image: linear-gradient(#cb4f47, #200c0cfa);
   color:#cb4f47;
@@ -157,7 +161,7 @@ footer {
   height: 200px;
 }
 
-/*Stilen til elementene i footern*/
+/*Styling for the elements inside the footer*/
 footer p {
   color:aliceblue ;
   font-family: 'Courier New', Courier, monospace;
@@ -195,18 +199,19 @@ footer img{
   align-items: center;
   margin-top: 30px;
 }
+/*Using a div-box to create my own horizontal line*/
 .horizontal-line{
   border-bottom: 1px solid black;
   margin-top: -6%;
   width: 60%;
   margin-left: 20%;
 }
+/*Styling for text in contents*/
 .contents{
   text-align: left;
   width: 40%;
   margin-left: 30%;
   font-size:large;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-bottom: 25px;
 
 }
@@ -219,7 +224,7 @@ footer img{
     margin-left: 10%;
   }
 }
-
+/*Styling the Google Maps iFrame*/
 iframe{
   width: 40%;
   height: 100px;
@@ -247,7 +252,7 @@ iframe{
   top: 10%; 
   left: 10%; 
   font-size: 5vw; 
-  background-color: rgba(1, 1, 1, 0.78); /*https://rainbow.rodneylab.com/ */
+  background-color: rgba(1, 1, 1, 0.78); 
   color: rgb(245, 237, 227);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 10px;
@@ -400,11 +405,13 @@ h2 {
   padding-left: 1px;
  }
  /* Topical page */
-.wrapper-topical {
+ /* Creating a grid to "place" boxes with the website content */
+ .wrapper-topical {
   display: grid;
   grid-template-columns: 70vw auto minmax(300px, 20vw) 20px;
   grid-auto-rows: minmax(100px, auto);
 }
+/* Creating the boxes and giving them placements in the grid */
 .topical-main-box {
   grid-column: 1 / 3;
   grid-row: 1;
@@ -420,8 +427,9 @@ h2 {
 .topical-tertiary-box {
   grid-column: 3 / span 2;
   grid-row: 1;
-  background-image: url("../Images/beige2.jpg");
+  background-color: #F5E4E3;;
 }
+/* Styling/customizing the content such as text, headers, etc. In the boxes*/
 .topical-header {
   font-size: 20px;
   text-align: center;
@@ -439,24 +447,37 @@ h2 {
   margin-right: 0.5em;
   list-style-type: disc;
 }
+/* Making hyperlinks not "stylized" as it crashed with the website theme*/
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
 }
+/* Added space between the list elements for aesthetic reasons*/
 .topical-li:not(:last-child) {
   margin-bottom: 5px;
-} 
+}
+/* For accessability on smaller or thinner screens, makes the boxes go underneath each other instead of beside*/
 @media only screen and (max-width: 800px) {
+  .wrapper-topical {
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    align-items: left;
+  }
   .topical-main-box{
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
     grid-row: 1;
   }
-  .topical-tertiary-box{
-    grid-column: 1 / 4;
+  .topical-secondary-box{
+    grid-column: 1 / 3;
     grid-row: 2;
   }
   .topical-tertiary-box{
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
     grid-row: 3;
+    padding-bottom: 2em;
   }
 }
