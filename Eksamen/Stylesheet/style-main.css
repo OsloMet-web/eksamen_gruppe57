@@ -473,6 +473,11 @@ a, a:hover, a:focus, a:active {
 .topical-li:hover{
   color: white;
 }
+.image-container {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 /* For accessability on smaller or thinner screens, makes the boxes go underneath each other instead of beside*/
 @media only screen and (max-width: 800px) {
 .wrapper-topical {
@@ -498,11 +503,31 @@ a, a:hover, a:focus, a:active {
     grid-row: 3;
     padding-bottom: 2em;
   }
+  .topical-content {
+    font-size: 20px;
+  }
 }
+/* Accessibility*/
 .accessibility-content{
   margin-left: 20%;
 }
 .accessibility-header{
   margin-top: 0;
   text-align: start;
+  margin: 0;
+  padding: 0;
+}
+.accessibility-list{
+  list-style: circle;
+}
+
+.wave_eateries {
+  width: 80%;
+  display: flex;
+  height: 30%;
+  padding-top: 3%;
+  padding-left: 20%;
+  padding-bottom: 2vw;
+
+
 }
