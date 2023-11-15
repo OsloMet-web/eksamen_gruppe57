@@ -287,13 +287,24 @@ footer img{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .study-place-img{
-  width: auto;
-  max-width: 50%;
+  width: 200%;
   margin: 0 5% 5% 0;
 }
 .library-bottom-content{
   display: flex;
   align-items: flex-start;
+}
+
+@media (max-width: 1080px){
+  .library-bottom-content {
+    flex-direction: column;
+  }
+  .study-place-img {
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 /* Eateries page */
