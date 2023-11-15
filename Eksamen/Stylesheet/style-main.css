@@ -500,3 +500,10 @@ a, a:hover, a:focus, a:active {
     padding-bottom: 2em;
   }
 }
+.accessibility-content{
+  margin-left: 20%;
+}
+.accessibility-header{
+  margin-top: 0;
+  text-align: start;
+}
