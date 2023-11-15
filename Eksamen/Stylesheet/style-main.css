@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Heebo);
 body{
   padding: 0;
   margin: 0;
@@ -22,7 +21,7 @@ nav {
 }
 /*Styling of elements in the nav-menu*/
 .nav-menu {
-  font-family:  'Heebo', serif ;
+  font-family:  'Courier New', Courier, monospace;
   text-decoration: none;
   font-size: large;
   color: black;
@@ -176,7 +175,7 @@ footer {
 /*Styling for the elements inside the footer*/
 footer p {
   color:#d5d5d5;
-  font-family: 'Heebo', serif;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   margin-top: 50px;
 }
