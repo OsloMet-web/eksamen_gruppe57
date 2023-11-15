@@ -22,7 +22,7 @@ nav {
 }
 /*Styling of elements in the nav-menu*/
 .nav-menu {
-  font-family: 'Heebo', serif;
+  font-family:  'Heebo', serif ;
   text-decoration: none;
   font-size: large;
   color: black;
@@ -65,6 +65,14 @@ ul {
   justify-content: center;
   align-items: center;
 }
+/*Styling the Google Maps iFrame*/
+iframe{
+  width: 40%;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin-bottom: 10px;
+} 
 /*Hiding the nav-menu when the screen has a width of 1080px or less, the "hamburger" button will show up, when clicked the dropdown appears.*/
 @media (max-width: 1080px) {
   .toggle-menu{
@@ -136,6 +144,9 @@ ul {
   }
   .logo-img{
     display: none;
+  }
+  iframe{
+    width: 80%;
   }
 }
 h1 {
@@ -227,20 +238,13 @@ footer img{
     margin-left: 10%;
   }
 }
-/*Styling the Google Maps iFrame*/
-iframe{
-  width: 40%;
-  height: 100px;
-  border: 2px solid black;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
+
 .main-footer-text{
   margin-top: 45px;
   font-size: 14px;
 }
 .footer-text{
-  margin-top: -5px;
+  margin-top: -10px;
   font-size: 14px;
 }
 .main-container-library {
@@ -258,7 +262,7 @@ iframe{
   background-color: rgba(1, 1, 1, 0.78); 
   color: rgb(245, 237, 227);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
 }
 .container-content {
@@ -465,6 +469,10 @@ a, a:hover, a:focus, a:active {
 /* Added space between the list elements for aesthetic reasons*/
 .topical-li:not(:last-child) {
   margin-bottom: 5px;
+}
+/*Making it clear which link the user is hovering their mouse over.*/
+.topical-li:hover{
+  color: white;
 }
 /* For accessability on smaller or thinner screens, makes the boxes go underneath each other instead of beside*/
 @media only screen and (max-width: 800px) {
