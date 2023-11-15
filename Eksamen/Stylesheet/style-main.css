@@ -253,6 +253,7 @@ footer img{
   width: 100%;
   height: auto;
 }
+/*Making a background for the text on top of the image to make it easily readable*/
 .text-overlay {
   position: absolute;
   top: 10%; 
@@ -264,6 +265,7 @@ footer img{
   padding: 40px;
   border-radius: 10px;
 }
+/*Content of library site*/
 .container-content {
   position: relative; 
   color: black;
@@ -285,6 +287,7 @@ footer img{
   text-align: left;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+/*Image appearing beside the text in library*/
 .study-place-img{
   width: 200%;
   margin: 0 5% 5% 0;
@@ -293,7 +296,7 @@ footer img{
   display: flex;
   align-items: flex-start;
 }
-
+/*Putting the image in libraries below the text when the screen gets a width of 1080px or below*/
 @media (max-width: 1080px){
   .library-bottom-content {
     flex-direction: column;
