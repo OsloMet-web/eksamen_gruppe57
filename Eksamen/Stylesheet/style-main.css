@@ -141,9 +141,6 @@ iframe{
   .text-overlay{
     display: none;
   }
-  .logo-img{
-    display: none;
-  }
   iframe{
     width: 80%;
   }
