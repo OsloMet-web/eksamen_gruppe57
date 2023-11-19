@@ -186,6 +186,7 @@ footer img{
   margin-top: 5px;
   margin-bottom: 5px;
 }
+/* Styling the clickable elements in the footer*/
 .tlf{
   text-decoration: none;
   color: #e4e4e4;
@@ -225,6 +226,7 @@ footer img{
   margin-bottom: 25px;
 
 }
+/*Changing content size based on screen width to increase readability*/
 @media (max-width: 1080px){
   .contents{
     width: 80%;
@@ -519,6 +521,7 @@ a, a:hover, a:focus, a:active {
   }
 }
 /* Accessibility*/
+/*Simple styling of elements inside the accessibility page*/
 .accessibility-box{
   margin-left: 20%;
 }
