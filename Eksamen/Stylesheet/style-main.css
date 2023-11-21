@@ -247,23 +247,28 @@ footer img{
 }
 .main-container-library {
   position: relative;
+  width: 100%;
+  max-width: 100%; 
 }
 .books-img {
   width: 100%;
   height: auto;
+  display: block; 
 }
-/*Making a background for the text on top of the image to make it easily readable*/
+/*Creating the see-through black box behind the text to create good contrast between text and background, increasing readability.*/
 .text-overlay {
-  position:fixed;
+  position: absolute;
   top: 10%; 
   left: 10%; 
+  right: 10%; 
   font-size: 5vw; 
+  width:fit-content;
   background-color: rgba(1, 1, 1, 0.78); 
   color: rgb(245, 237, 227);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 40px;
   border-radius: 10px;
-  margin-top: 10%;
+  box-sizing: border-box; 
 }
 /*Content of library site*/
 .container-content {
