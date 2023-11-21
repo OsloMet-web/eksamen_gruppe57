@@ -463,10 +463,10 @@ h2 {
 }
 /* Styling/customizing the content such as text, headers, etc. In the boxes*/
 .topical-header {
-  font-size: 20px;
+  padding: 20px;
   text-align: center;
-  font-weight: bold;
-  padding: 10px;
+  margin-bottom: auto;
+
 }
 .topical-content {
   font-size: 17px;
@@ -532,12 +532,13 @@ a, a:hover, a:focus, a:active {
   margin-left: 20%;
 }
 .accessibility-header{
-  text-align: start;
-  margin-top: 1%;
-  padding: 0;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: auto;
 }
 .accessibility-list{
   list-style:square;
+  padding-left: 17px;
 }
 .wave-test {
   max-width: 80%;
@@ -547,6 +548,7 @@ a, a:hover, a:focus, a:active {
   padding-left: 20%;
   padding-bottom: 2vw;
 }
+
 .accessibility-subheader{
   text-align: start;
   margin-left: 20%;
