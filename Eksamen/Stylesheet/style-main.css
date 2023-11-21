@@ -254,7 +254,7 @@ footer img{
 }
 /*Making a background for the text on top of the image to make it easily readable*/
 .text-overlay {
-  position: absolute;
+  position:fixed;
   top: 10%; 
   left: 10%; 
   font-size: 5vw; 
@@ -263,6 +263,7 @@ footer img{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 40px;
   border-radius: 10px;
+  margin-top: 10%;
 }
 /*Content of library site*/
 .container-content {
